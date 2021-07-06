@@ -39,7 +39,6 @@ export default function Post(props) {
 
 export async function getStaticPaths() {
     const paths = await getAllPostIds();
-    console.log("===============", paths)
     return {
         paths,
         fallback: false,
